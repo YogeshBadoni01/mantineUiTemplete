@@ -1,0 +1,103 @@
+.all{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.aheader{
+    position:absolute;
+    left: 20px;
+    right: 20px;
+    top: 30px;
+    /* padding: 120px 40px; */
+}
+.header{
+    position:absolute;
+    width:"100%";
+    left: 60px;
+    right: 60px;
+    top: 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display 3 columns on desktop */
+    gap: 16px; /* Adjust the gap between items as needed */
+    
+    /* On screens with a maximum width of 768px (e.g., mobile), display a single column */
+}
+
+.heading{
+    font-size: 34px;
+}
+.footer{
+    background-color: #fab005;
+    color: #fff;
+    padding: 4rem 0;    
+}
+
+.footerflex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.code{
+    background-color: #f8f9fa;
+    color: #2d2d2d;
+    /* width: 100%; */
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.codeDiv{
+    background-color: #f8f9fa;
+    color: #2d2d2d !important;
+    gap: 15px;
+    
+}
+
+.padding{
+    padding: 4rem 60px;
+}
+@media (max-width: 768px) {
+    .aheader{
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        top: 30px;
+        padding: 0;
+    }
+    .header{
+        /* position:'static'; */
+        left: 20px;
+        right: 20px;
+        top: 30px;
+    }
+    
+    .grid  {
+        grid-template-columns: 1fr;
+        /* Optional styling for individual items */
+    }
+    
+    .main_heading{
+        font-size: 44px;
+    }
+    .footerflex{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .heading{
+        font-size: 26px;
+    }
+    .footerleft{
+        justify-content: center;
+        align-items: center;
+    }
+    .padding{
+        padding: 60px 0 ;
+    }
+}

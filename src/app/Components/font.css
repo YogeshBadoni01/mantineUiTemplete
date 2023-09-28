@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: 'Apple System';
+    src: url('/fonts/SanFrancisco-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Apple System';
+    src: url('/fonts/SanFrancisco-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }

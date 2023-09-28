@@ -1,0 +1,47 @@
+{
+  "name": "project1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mantine/carousel": "^7.0.2",
+    "@mantine/code-highlight": "^7.0.2",
+    "@mantine/core": "^7.0.2",
+    "@mantine/dates": "^7.0.2",
+    "@mantine/dropzone": "^7.0.2",
+    "@mantine/ds": "^7.0.2",
+    "@mantine/form": "^7.0.2",
+    "@mantine/hooks": "^7.0.2",
+    "@mantine/modals": "^7.0.2",
+    "@mantine/notifications": "^7.0.2",
+    "@mantine/nprogress": "^7.0.2",
+    "@mantine/spotlight": "^7.0.2",
+    "@mantine/tiptap": "^7.0.2",
+    "@tabler/icons-react": "^2.35.0",
+    "@tiptap/extension-link": "^2.1.11",
+    "@tiptap/react": "^2.1.11",
+    "@tiptap/starter-kit": "^2.1.11",
+    "dayjs": "^1.11.10",
+    "embla-carousel-react": "^7.1.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-icons": "^4.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "^8.4.30",
+    "postcss-preset-mantine": "^1.7.0",
+    "postcss-simple-vars": "^7.0.1",
+    "typescript": "latest"
+  }
+}
