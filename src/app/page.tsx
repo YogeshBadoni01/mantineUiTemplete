@@ -7,9 +7,13 @@ import SectionOne from './Components/SectionOne'
 import SectionTwo from './Components/SectionTwo'
 import Cards from './Components/Cards'
 import FAQs from './Components/FQAs'
+import{useColorScheme }from'@mantine/hooks';
+import {useMantineColorScheme} from "@mantine/core"
 
 
 export default function Home() {
+  const{colorScheme,toggleColorScheme}=useMantineColorScheme()
+  // toggleColorScheme}>{colorScheme==="dark"?<MdOutlineDarkMode/>:<MdOutlineLightMode/>}
   return (
     <>
     <div style={{marginTop:""}}>

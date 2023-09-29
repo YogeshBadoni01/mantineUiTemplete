@@ -19,7 +19,7 @@ const SectionOne = () => {
                         src="/image/image2.png"
                         />
                     </GridCol>
-                    <GridCol span={7} >
+                    <GridCol span={7} style={{color:"#000" }}>
                         <Title order={1}  mb={'12px'} mt={'31px'}className={classis.heading}>Put something here too</Title>
                         <Text mb={"20px"}>Dennis Farina is unique among thespians in that he was one of the few to achieve success as a "late-bloomer." He did not start acting until he was 37 years old, after stints in the military and 18 years on the Chicago Police Department.</Text>
                         <Button style={{background:"#fab005"}}> Tell me more</Button>

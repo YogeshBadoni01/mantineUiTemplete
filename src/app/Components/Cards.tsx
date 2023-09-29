@@ -1,6 +1,5 @@
 "use client"
-import { Card, Image, Text, Badge, Button, Group,Container,Flex, Grid } from '@mantine/core';
-import { MdPadding } from 'react-icons/md';
+import { Card, Image, Text, Badge, Button, Group,Container,Flex, Grid,Title, Center } from '@mantine/core';
 import classis from './Responsive.module.css';
 
 
@@ -30,11 +29,12 @@ function Cards() {
     <>
     <section className="" style={{padding:"4rem 60px"}}>
         <Container>
+          <Title order={1} style={{color:"#000",textAlign:"center"}} mt={"31px"} mb={"12px"}>These cards are really nice</Title>
         <div className={classis.grid}>
         {
     myCard.map((item,index)=>(
       // <Grid.Col span={4}>
-    <Card shadow="sm" padding="lg" radius="md" withBorder key={index} >
+    <Card shadow="sm" padding="lg" radius="md"  key={index} style={{background: "transparent", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"}} >
       <Card.Section>
         <Image
           src={item.Image}
@@ -46,18 +46,21 @@ function Cards() {
           />
       </Card.Section>
 
-      <Group justify="space-between"  mt="md" mb="xs" >
+      <Group justify="space-between"  mt="md" mb="xs" style={{color:"#000" }} >
         <Text fw={500} >{item.Heading}</Text>
-        <Badge color="pink" variant="light">
+        <Badge color="pink" variant="light" style={{backgroundColor:"#fff9db",color:"#fab005",fontSize:"13px",border:0}}>
           {item.Badge}
         </Badge>
       </Group>
 
-      <Text size="sm" c="dimmed">
+      <Group style={{color:"#000"}}>
+
+      <Text size="sm"  style={{color:"#000"}} >
         {item.Subheading}
       </Text>
+      </Group>
 
-      <Button variant="light" color="blue" fullWidth mt="md" radius="md" mt-15px >
+      <Button variant="light" color="blue" fullWidth mt="md" radius="md" mt-15px style={{backgroundColor:"#fff9db",color:"#fab005"}} >
         Find out
       </Button>
     </Card>

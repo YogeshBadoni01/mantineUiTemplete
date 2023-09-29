@@ -16,7 +16,7 @@ export function HeaderMegaMenu() {
             <Box >
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-        <Badge visibleFrom="sm" color="yellow" my='sm' >A simple Mantine template</Badge>
+        <Badge visibleFrom="sm"   style={{backgroundColor:"#fff9db",color:"#fab005",fontSize:"13px",border:0}}fw={700} my='sm'  >A simple Mantine template</Badge>
             <Group>
                 <Group h="100%" gap={0} visibleFrom="sm">
                     <Link href="/" className={classes.link} >
@@ -31,13 +31,13 @@ export function HeaderMegaMenu() {
                     </Link>
                 </Group>
                 <Group visibleFrom="sm">
-                    <Button variant="default" component={Link} href={'https://mantine.dev/'}><Title order={5}>Check out Mantine</Title></Button>
+                    <Button variant="default" bg={"#fab005"} component={Link} href={'https://mantine.dev/'} style={{border:"none"}}><Title order={5}>Check out Mantine</Title></Button>
                     
                 </Group>
             </Group>
 
 
-          <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
+          <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" c="black"/>
         </Group>
       </header>
 
@@ -50,6 +50,9 @@ export function HeaderMegaMenu() {
         position='right'
         padding={"24px"}
         size={320}
+        c="black"
+        style={{background:"white"}}
+        bg="white"
 
       >
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md" >
@@ -79,7 +82,7 @@ export function HeaderMegaMenu() {
             </Flex>
             
             <Group >
-              <Code color="yellow" c="white" pb={"6px"} p={"15px"} style={{width:("fit-content"),display:"flex",gap:"6px", flexDirection:"column"}}  maw={"370px"}>
+              {/* <Code color="yellow" c="white" pb={"6px"} p={"15px"} style={{width:("fit-content"),display:"flex",gap:"6px", flexDirection:"column"}}  maw={"370px"}>
               Template made by
               <Flex align={"center"} gap={"16px"}>
               <Avatar color="cyan" radius="xl">GDC</Avatar>
@@ -88,7 +91,17 @@ export function HeaderMegaMenu() {
                   <Title order={6} fz={"12px"}>giuseppe.delcampo@outlook.com</Title>
               </Group>
               </Flex>
-              </Code>
+              </Code> */}
+              <Code  c="white" pb={"6px"} p={"15px"} style={{width:("fit-content"),background:"#fff9db",textAlign:"left",color:"#2d2d2d" }}  className={classis.codeDiv} >
+             Template made by
+             <Flex align={"center"} gap={"16px"}>
+             <Avatar color="cyan" radius="xl" style={{backgroundColor:"#fff9db",color:"#fab005"}}>GDC</Avatar>
+             <Group w={"min-content"} color="#2d2d2d" style={{display:"flex",justifyContent:"flex-start",alignItems:"flex-start",flexWrap:"nowrap",flexDirection:"column",gap:"0",fontWeight:"500"}}>
+                <Title order={5} fw={500} >Giuseppetm</Title>
+                <Title order={6} fw={500}>giuseppe.delcampo@outlook.com</Title>
+             </Group>
+             </Flex>
+            </Code>
             </Group>
 
           </Flex >

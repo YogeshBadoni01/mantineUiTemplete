@@ -6,34 +6,34 @@ const FAQs = () => {
     //const theme = useMantineTheme();
 
     return (
-        <div className={classis.padding}>
+        <div className={classis.padding} style={{color:"#000"}}>
 
             <Container>
                 <Box mb={'30px'} >
-                    <div style={{ textAlign: 'left' }}><Badge variant="filled" color="yellow">FAQs</Badge></div>
+                    <div style={{ textAlign: 'left',color:"#fff" }}><Badge variant="filled" color="yellow">FAQs</Badge></div>
                     <Text color="black">
-                        <Title order={1} style={{ marginTop: 10 }} className={classis.heading} color="white">Woah, Frequently asked questions here</Title>
+                        <Title order={1} style={{ marginTop: "10px" }} className={classis.heading} >Woah, Frequently asked questions here</Title>
                     </Text>
                 </Box>
 
                 <Accordion variant="contained">
-                    <Accordion.Item value="item1">
+                    <Accordion.Item value="item1" style={{color:"#000"}}>
                         <Accordion.Control icon={<FiCoffee size={20} color={"#fab005"} />}>
-                            Is Dennis Farina famous?
+                            <Text style={{color:"#000"}}>Is Dennis Farina famous?</Text>
                         </Accordion.Control>
                         <Accordion.Panel>Yes, of course.</Accordion.Panel>
                     </Accordion.Item>
 
-                    <Accordion.Item value="item2">
+                    <Accordion.Item value="item2" style={{color:"#000"}}>
                         <Accordion.Control icon={<FiCloudSnow size={20} color={"#fab005"} />}>
-                            Are pineapples good?
+<Text style={{color:"#000"}}>                            Are pineapples good?</Text>
                         </Accordion.Control>
                         <Accordion.Panel>Unfortunately no.</Accordion.Panel>
                     </Accordion.Item>
 
-                    <Accordion.Item value="item3">
+                    <Accordion.Item value="item3" style={{color:"#000"}}>
                         <Accordion.Control icon={<FiAnchor size={20} color={"#fab005"} />}>
-                            Do you like yellow?
+                            <Text style={{color:"#000"}}>Do you like yellow?</Text>
                         </Accordion.Control>
                         <Accordion.Panel>Oh yes!</Accordion.Panel>
                     </Accordion.Item>

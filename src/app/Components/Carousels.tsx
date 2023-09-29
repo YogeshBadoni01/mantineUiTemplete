@@ -42,8 +42,8 @@ export default function Carousels() {
 
     <Flex justify={'center'} direction={'column'} align={'center'}  >
 
-    <Title mb={'12px'} mt={'31px'} className={classis.heading}>Explain something in this carousel </Title>
-    <Text mb={'25px'}>You can insert images or some texts if you need.</Text>
+    <Title mb={'12px'} mt={'31px'} className={classis.heading } style={{color:"#000"}}>Explain something in this carousel </Title>
+    <Text mb={'25px'} style={{color:"#000"}}>You can insert images or some texts if you need.</Text>
 
     <Carousel
       withIndicators
